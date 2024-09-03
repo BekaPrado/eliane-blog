@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --primary-color: #02880d;
+    --secundary-color: #492a01;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    font-family: "Righteous", sans-serif;
+}
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+}
+
+header div{
+    display: flex;
+    gap: 16px;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 50%;
+    font-size: 24px;
+    color: var(--secundary-color);
+}
+
+main{
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: var(--secundary-color);
+}
+
+.container{
+    height: 200px;
+    display: flex;
+    z-index: 1;
+}
+
+.description{
+    width: 100%;
+    color: var(--secundary-color);
+}
+
+.description h2{
+    font-size: 40px;
+}
+
+.description p{
+    font-size: 20px;
+    width: 500px;
+}
+
+.gallery {
+    position: absolute;
+    top: 300px; /* Alinha ao topo do contêiner pai */
+    left: 650px; /* Alinha à esquerda do contêiner pai */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colunas flexíveis com tamanho mínimo */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 16px; /* Espaçamento interno do contêiner da galeria */
+}
+
+/* Estilo individual das imagens dentro da galeria */
+.gallery img {
+    width: 100%; /* A imagem preenche a coluna */
+    height: 100%; /* Mantém a proporção original da imagem */
+    border: 1px solid black; /* Borda opcional */
+    object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+}
+
+
+
+footer{
+    height: 50px;
+    color: var(--secundary-color);
+    font-style: italic;
+    text-align: center;
+    margin-top: 180px;
+}

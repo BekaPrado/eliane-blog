@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --primary-color: #02880d;
+    --secundary-color: #492a01;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-inline: 64px;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header div {
+    display: flex;
+    gap: 16px;
+}
+
+header a {
+    font-size: 25px;
+    color: var(--secundary-color);
+    line-height: 1.5;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.description {
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.description h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    color: var(--secundary-color);
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    margin-top: auto;
+}
+
+.eliane-image {
+    position: absolute;
+    top: 100px; /* Ajuste este valor para mover a imagem mais para baixo */
+    right: 0; /* Alinha à direita */
+    width: 40%; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+}

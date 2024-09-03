@@ -1,0 +1,89 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --primary-color: #02880d;
+    --secundary-color: #492a01;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* permite rolagem*/
+    padding-inline: 64px;
+}
+
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header div {
+    display: flex;
+    gap: 30px;
+}
+
+header a {
+    font-size: 20px;
+    color: var(--secundary-color);
+    line-height: 1.5;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+.description {
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.description h2 {
+    font-size: 50px;
+}
+
+.description p {
+    font-size: 20px;
+    width: 650px;
+}
+
+footer {
+    height: 50px;
+    color: var(--secundary-color);
+    font-style: italic;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.eliane-image {
+    width: 55%;
+    height: auto;
+    margin-left: -10%; 
+}
